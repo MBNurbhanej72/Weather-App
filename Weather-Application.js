@@ -65,10 +65,10 @@ let getWeatherData = async () => {
     w_minTem.innerHTML = `Min: ${(main.temp_min - 273.15).toFixed()}&#176;C`;
     w_maxTem.innerHTML = `Max: ${(main.temp_max - 273.15).toFixed()}&#176;C`;
 
-    w_feelsLike.innerHTML = `Feels Like: ${(main.feels_like - 273.15).toFixed(2)}&#176;C`;
-    w_humidity.innerHTML = `Humidity: ${main.humidity}%`;
-    w_wind.innerHTML = `Wind: ${wind.speed} m/s`;
-    w_pressure.innerHTML = `Pressure: ${main.pressure} hPa`;
+    w_feelsLike.innerHTML = ` ${(main.feels_like - 273.15).toFixed(2)}&#176;C`;
+    w_humidity.innerHTML = ` ${main.humidity}%`;
+    w_wind.innerHTML = ` ${wind.speed} m/s`;
+    w_pressure.innerHTML = ` ${main.pressure} hPa`;
 
   } catch (error) {
     console.log(error);
